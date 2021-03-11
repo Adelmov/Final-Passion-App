@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+ <div class="container">
+    <router-outlet></router-outlet>
+
+</div>
+<div class= "card-colums"> 
+
+    <div  *ngFor = "let song of newSongs" class="card">
+        <img class ="card-img-top" [src]="song.images[0].url" alt="Card image">
+        <div class= "card-body"> 
+            <h5 class= "card-title">  
+                {{song.name}}
+            </h5>
+            <p class="card-text">
+               <span *ngFor = "let artist of song.artists "class= "badge badge-pill badge-primary"> 
+                   {{artist.name}}</span> 
+            </p>
+        </div>
+    </div>
+
+</div>
