@@ -15,8 +15,12 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
-
-import { SpotifyService} from './services/spotify.service'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SpotifyService} from './services/spotify.service';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { CardsComponent } from './components/shared/cards/cards.component';
+import { SafepipePipe } from './pipes/safepipe/safepipe.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +32,19 @@ import { SpotifyService} from './services/spotify.service'
     MusicComponent,
     ArtistComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    LoadingComponent,
+    CardsComponent,
+    SafepipePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule, 
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
