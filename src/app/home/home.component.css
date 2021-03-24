@@ -1,10 +1,12 @@
-body{
-  background-image: url(../../assets/1092587.jpg);
-  background-color: tomato;
-}
+
 #background{
+  background-repeat: repeat;
   background-image: linear-gradient(to right, rgb(167, 20, 10) , rgb(33, 113, 206) , rgb(19, 58, 109));
 }
+#reasons{
+  background-color: aliceblue;
+}
+
 #logos{
   width: 75%;
 }
@@ -61,6 +63,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #363636;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -150,4 +153,26 @@ body {
   animation-delay: 1s;
   --animate-duration:4s;
   animation-iteration-count: infinite; 
+}
+@media(orientation: portrait){
+  #logos{
+    position:relative; top: 0px; right: 30px;
+    width: 120%;
+  }
+  .txt-text{
+    font-size: 25px;
+  }
+  .paragraphs{
+    font-size: 20px;
+  }
+
+  #txt-team{
+    background-color: rgb(247, 38, 38);
+  }
+  .txt-bios{
+    color: rgb(58, 58, 58);
+  }
+  .txt{
+    color: black;
+  }
 }
